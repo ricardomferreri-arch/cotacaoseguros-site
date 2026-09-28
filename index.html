@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seguro Moto Suhai a partir de R$82,90 | Cotação Grátis</title>
+<meta name="description" content="Cotação de seguro moto Suhai. Até 70% mais barato, 100% Fipe, guincho 24h e zero franquia. Resposta em 5 min no WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0E0E0F;
+    --black-2:#18191B;
+    --green:#25D366;
+    --green-dark:#1DA851;
+    --green-light:#4ADE80;
+    --paper:#FFFFFF;
+    --ink:#141414;
+    --muted:#5B5F66;
+    --line: rgba(20,20,20,0.10);
+    color-scheme: light;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; scroll-padding-top: env(safe-area-inset-top,0px);}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', system-ui, -apple-system, sans-serif;
+    padding-top: env(safe-area-inset-top,0px);
+    padding-bottom: env(safe-area-inset-bottom,0px);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,h2,h3{font-family:'Space Grotesk', 'Inter', sans-serif; margin:0; line-height:1.08; letter-spacing:-0.01em;}
+  p{margin:0;}
+  img{max-width:100%;}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px;}
+  a{color:inherit;}
+
+  /* Header */
+  header{
+    background:var(--black);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+  }
+  .nav{display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1120px; margin:0 auto;}
+  .brand{font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:1.1rem; color:#fff;}
+  .brand span{color:var(--green-light);}
+  .status{
+    display:flex; align-items:center; gap:8px; font-size:.85rem; color:rgba(255,255,255,0.75);
+  }
+  .status .pulse{width:7px; height:7px; border-radius:50%; background:var(--green); box-shadow:0 0 0 4px rgba(37,211,102,0.2);}
+
+  /* Hero */
+  .hero{background:var(--black); padding:56px 0 64px; overflow-x:hidden;}
+  .hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:44px; align-items:start;}
+  .kicker{color:var(--green-light); font-weight:600; font-size:.9rem; margin-bottom:14px;}
+  .hero h1{font-size:clamp(2rem,4vw,3.1rem); color:#fff; max-width:15ch;}
+  .hero h1 .hl{color:var(--green-light);}
+  .hero p.lead{margin-top:20px; font-size:1.08rem; color:rgba(255,255,255,0.72); max-width:46ch; line-height:1.6;}
+  .hero p.lead b{color:#fff; font-weight:600;}
+
+  .rating{display:flex; align-items:center; gap:10px; margin-top:22px; color:rgba(255,255,255,0.75); font-size:.92rem;}
+  .stars{color:#FFB020; letter-spacing:1px;}
+
+  .price-box{
+    display:flex; align-items:center; gap:16px; margin-top:26px;
+    background:var(--black-2); border:1px solid rgba(255,255,255,0.08); border-radius:10px;
+    padding:16px 20px;
+  }
+  .price-box .from{font-size:.8rem; color:rgba(255,255,255,0.55);}
+  .price-box .value{font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:1.9rem; color:#fff;}
+  .price-box .value small{font-size:1rem; font-weight:600; color:rgba(255,255,255,0.6);}
+  .price-box .badge{
+    background:rgba(37,211,102,0.15); color:var(--green-light); font-weight:600; font-size:.8rem;
+    padding:6px 12px; border-radius:20px; white-space:nowrap;
+  }
+
+  .btn-primary{
+    background:var(--green); color:#08110B; text-decoration:none;
+    padding:17px 24px; border-radius:9px; font-weight:700; font-size:1rem;
+    display:flex; align-items:center; justify-content:center; gap:10px; margin-top:26px;
+    box-shadow:0 10px 28px rgba(37,211,102,0.28);
+  }
+  .btn-primary .sub{display:block; font-weight:500; font-size:.78rem; opacity:.8; margin-top:2px;}
+  .btn-primary .icon{font-size:1.2rem;}
+  .trust-line{margin-top:14px; font-size:.85rem; color:rgba(255,255,255,0.55);}
+
+  .badges{display:flex; flex-wrap:wrap; gap:10px; margin-top:22px;}
+  .badges span{
+    border:1px solid rgba(255,255,255,0.14); color:rgba(255,255,255,0.85);
+    font-size:.82rem; padding:7px 13px; border-radius:20px;
+  }
+
+  .hero-panel{
+    background:var(--black-2); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:26px;
+    color:#fff;
+  }
+  .hp-top{display:flex; justify-content:space-between; align-items:center; font-size:.82rem; color:rgba(255,255,255,0.6); margin-bottom:18px;}
+  .hp-live{display:flex; align-items:center; gap:7px;}
+  .hp-live .pulse{width:6px; height:6px; border-radius:50%; background:var(--green);}
+  .hp-susep{color:var(--green-light); font-weight:600;}
+  .hp-price-label{font-size:.78rem; color:rgba(255,255,255,0.55); text-align:center;}
+  .hp-price{font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:2.4rem; text-align:center; margin-top:6px;}
+  .hp-price small{font-size:1rem; font-weight:500; color:rgba(255,255,255,0.6);}
+  .hp-econ{display:block; margin:14px auto 20px; text-align:center;}
+  .hp-econ span{background:rgba(37,211,102,0.15); color:var(--green-light); font-size:.8rem; font-weight:600; padding:6px 14px; border-radius:20px;}
+  .hp-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:12px;}
+  .hp-list li{display:flex; gap:10px; align-items:flex-start; font-size:.92rem; color:rgba(255,255,255,0.85); line-height:1.4;}
+  .hp-list .check{color:var(--green-light); flex:none;}
+  .hp-cta{
+    display:block; margin-top:20px; background:var(--green); color:#08110B; text-decoration:none;
+    text-align:center; padding:14px; border-radius:8px; font-weight:700; font-size:.94rem;
+  }
+  .hp-foot{text-align:center; font-size:.75rem; color:rgba(255,255,255,0.45); margin-top:10px;}
+
+  /* Sections */
+  section{padding:64px 0;}
+  .section-head{max-width:56ch; margin-bottom:36px;}
+  .section-kicker{color:var(--green-dark); font-weight:600; font-size:.88rem; margin-bottom:12px;}
+  .section-head h2{font-size:clamp(1.6rem,2.6vw,2.15rem); color:var(--ink);}
+  .section-head h2 .hl{color:var(--green-dark);}
+  .section-head p{margin-top:16px; color:var(--muted); font-size:1.02rem; line-height:1.6;}
+  .section-head p b{color:var(--ink); font-weight:600;}
+
+  .about-grid{display:grid; grid-template-columns:1.3fr .9fr; gap:40px; align-items:start;}
+  .stats{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  .stat{border:1px solid var(--line); border-radius:12px; padding:22px 20px;}
+  .stat .num{font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:1.7rem; color:var(--green-dark);}
+  .stat .label{margin-top:6px; font-size:.88rem; color:var(--muted);}
+
+  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:32px;}
+  .step{border-top:2px solid var(--ink); padding-top:18px;}
+  .step .num{font-family:'Space Grotesk', sans-serif; font-weight:700; color:var(--green-dark); font-size:1.1rem;}
+  .step h3{margin-top:10px; font-size:1.1rem; color:var(--ink);}
+  .step p{margin-top:8px; color:var(--muted); font-size:.96rem; line-height:1.5;}
+
+  .plans-wrap{background:var(--black);}
+  .plans-wrap .section-kicker{color:var(--green-light);}
+  .plans-wrap .section-head h2, .plans-wrap .section-head p{color:#fff;}
+  .plans-wrap .section-head p{color:rgba(255,255,255,0.65);}
+  .plans{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+  .plan{
+    background:var(--black-2); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:26px;
+    display:flex; flex-direction:column; gap:14px; color:#fff;
+  }
+  .plan.featured{background:var(--green); }
+  .plan.featured, .plan.featured *{color:#08110B;}
+  .plan .name{font-weight:600; font-size:1.02rem;}
+  .plan .cov{font-size:.88rem; color:rgba(255,255,255,0.65); line-height:1.5;}
+  .plan.featured .cov{color:rgba(8,17,11,0.8);}
+  .plan .p{font-family:'Space Grotesk', sans-serif; font-size:1.6rem; font-weight:700; margin-top:auto;}
+  .plan .p small{font-size:.85rem; font-weight:500;}
+  .plan a{
+    margin-top:6px; text-align:center; background:rgba(255,255,255,0.1); text-decoration:none;
+    padding:11px; border-radius:6px; font-weight:600; font-size:.92rem; color:#fff;
+  }
+  .plan.featured a{background:#08110B; color:#fff;}
+
+  .faq{display:flex; flex-direction:column; gap:2px; max-width:760px;}
+  .faq details{border-bottom:1px solid var(--line); padding:18px 0;}
+  .faq summary{cursor:pointer; font-weight:600; color:var(--ink); font-size:1.02rem; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:"+"; font-size:1.4rem; color:var(--green-dark); font-weight:400; flex:none;}
+  .faq details[open] summary::after{content:"–";}
+  .faq p{margin-top:12px; color:var(--muted); font-size:.96rem; line-height:1.55;}
+
+  .cta-final{background:var(--green); border-radius:16px; padding:48px 40px; display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;}
+  .cta-final h2{color:#08110B; font-size:clamp(1.5rem,2.4vw,1.9rem); max-width:20ch;}
+  .cta-final .btn-primary{background:#08110B; color:#fff; box-shadow:none; margin-top:0; padding:16px 24px;}
+
+  footer{background:var(--black); padding:32px 0;}
+  .foot-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-size:.85rem; color:rgba(255,255,255,0.5);}
+
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;}
+    .about-grid{grid-template-columns:1fr;}
+    .steps{grid-template-columns:1fr;}
+    .plans{grid-template-columns:1fr;}
+    .stats{grid-template-columns:1fr 1fr;}
+    .cta-final{flex-direction:column; align-items:flex-start;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">cotação<span>seguros</span></div>
+    <div class="status"><span class="pulse"></span>Atendendo agora</div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="kicker">Seguro Moto Suhai</div>
+        <h1>Moto Suhai <span class="hl">até 70% mais barato</span></h1>
+        <p class="lead">Você trabalha o dia inteiro em cima da moto. Se ela for roubada amanhã, o que acontece? Com o <b>seguro moto Suhai</b>, você tem cobertura de até 100% da Fipe, guincho 24h e zero franquia — por menos de R$3 por dia.</p>
+        <div class="rating"><span class="stars">★★★★★</span> 2.347 cotações realizadas · Nota 5.0</div>
+        <div class="price-box">
+          <div>
+            <div class="from">a partir de</div>
+            <div class="value">R$82<small>,90/mês</small></div>
+          </div>
+          <span class="badge">Até 70% OFF</span>
+        </div>
+        <a class="btn-primary" href="https://wa.me/5511957671467?text=Ol%C3%A1%2C%20quero%20cotar%20um%20seguro%20de%20moto" target="_blank" rel="noopener">
+          <span class="icon">✆</span>
+          <span>
+            Cotar agora no WhatsApp — é grátis
+            <span class="sub">Gratuito · Sem compromisso · Resposta em 5 min</span>
+          </span>
+        </a>
+        <div class="trust-line">✓ Já ajudamos mais de 2.347 motociclistas a proteger suas motos</div>
+        <div class="badges">
+          <span>✓ Aceita entregador</span>
+          <span>100% Fipe</span>
+          <span>Guincho 24h</span>
+          <span>Sem franquia</span>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="hp-top">
+          <span class="hp-live"><span class="pulse"></span>Atendendo agora</span>
+          <span class="hp-susep">✓ SUSEP</span>
+        </div>
+        <div class="hp-price-label">SEGURO MOTO A PARTIR DE</div>
+        <div class="hp-price">R$82,90<small>/mês</small></div>
+        <div class="hp-econ"><span>Economize até 70%</span></div>
+        <ul class="hp-list">
+          <li><span class="check">✓</span>Roubo e furto — até 100% FIPE</li>
+          <li><span class="check">✓</span>Sem franquia em sinistros</li>
+          <li><span class="check">✓</span>Guincho 24h até 200km</li>
+          <li><span class="check">✓</span>Aceita entregador e delivery</li>
+          <li><span class="check">✓</span>Apólice no mesmo dia</li>
+        </ul>
+        <a class="hp-cta" href="https://wa.me/5511957671467?text=Ol%C3%A1%2C%20quero%20cotar%20um%20seguro%20de%20moto" target="_blank" rel="noopener">Cotar grátis no WhatsApp</a>
+        <div class="hp-foot">Gratuito · Sem compromisso</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quem-somos">
+    <div class="wrap about-grid">
+      <div>
+        <div class="section-kicker">— Quem somos</div>
+        <h2>Por que 2.347 motociclistas <span class="hl">já cotaram</span> com a gente</h2>
+        <p style="margin-top:18px; color:var(--muted); font-size:1.02rem; line-height:1.65; max-width:56ch;">A CotaçãoSeguros existe para resolver um problema real: <b>a maioria dos motociclistas no Brasil roda sem seguro</b> — não por falta de vontade, mas porque as seguradoras cobram caro e recusam quem trabalha de moto.</p>
+        <p style="margin-top:14px; color:var(--muted); font-size:1.02rem; line-height:1.65; max-width:56ch;">Como correspondentes autorizados da <b>Suhai Seguradora</b>, oferecemos cotação rápida, 100% pela tabela Fipe, com aprovação também para quem é entregador ou motoboy.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="num">2.347+</div><div class="label">Cotações realizadas</div></div>
+        <div class="stat"><div class="num">70%</div><div class="label">Economia garantida</div></div>
+        <div class="stat"><div class="num">5min</div><div class="label">Tempo de resposta</div></div>
+        <div class="stat"><div class="num">5.0★</div><div class="label">Avaliação dos clientes</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-kicker">— Como funciona</div>
+        <h2>Da cotação ao contrato, em três passos</h2>
+        <p>Sem visita, sem vistoria complicada, sem esperar dias por uma resposta.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">01</div>
+          <h3>Você manda os dados da moto</h3>
+          <p>Modelo, ano e onde ela fica guardada. Leva menos de dois minutos pelo WhatsApp.</p>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <h3>A gente devolve o valor Fipe</h3>
+          <p>Você recebe as opções de plano e cobertura, com o preço já calculado pra sua moto.</p>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <h3>Assina e já está protegida</h3>
+          <p>Apólice no mesmo dia, pagamento facilitado e cobertura ativa a partir da confirmação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="plans-wrap" id="planos">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-kicker">— Planos</div>
+        <h2>Planos que cabem no seu bolso</h2>
+        <p>Valores de referência — o preço final depende do modelo, ano e perfil da moto.</p>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <div class="name">Essencial</div>
+          <div class="cov">Roubo e furto até 100% Fipe, incêndio, assistência 24h.</div>
+          <div class="p">R$82<small>,90/mês</small></div>
+          <a href="https://wa.me/5511957671467?text=Quero%20cotar%20o%20plano%20Essencial" target="_blank" rel="noopener">Cotar este plano</a>
+        </div>
+        <div class="plan featured">
+          <div class="name">Completo</div>
+          <div class="cov">Tudo do Essencial + colisão, danos a terceiros e zero franquia.</div>
+          <div class="p">sob consulta</div>
+          <a href="https://wa.me/5511957671467?text=Quero%20cotar%20o%20plano%20Completo" target="_blank" rel="noopener">Cotar este plano</a>
+        </div>
+        <div class="plan">
+          <div class="name">Entregador / Motoboy</div>
+          <div class="cov">Cobertura pensada pra quem usa a moto pra trabalhar todos os dias.</div>
+          <div class="p">sob consulta</div>
+          <a href="https://wa.me/5511957671467?text=Quero%20cotar%20o%20plano%20para%20entregador" target="_blank" rel="noopener">Cotar este plano</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-kicker">— Dúvidas</div>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>O que significa "100% Fipe"?</summary>
+          <p>Quer dizer que, em caso de indenização, o valor pago é o valor da tabela Fipe vigente no mês do sinistro — e não um valor fixo definido lá atrás, na assinatura do contrato.</p>
+        </details>
+        <details>
+          <summary>Aceita quem trabalha como entregador?</summary>
+          <p>Sim, o seguro Suhai aceita entregadores e motoboys — é um dos motivos pelos quais muitos motociclistas que trabalham de moto escolhem essa cobertura.</p>
+        </details>
+        <details>
+          <summary>Preciso instalar rastreador?</summary>
+          <p>Depende do modelo e do plano escolhido; isso é confirmado durante a cotação, junto com o restante das condições.</p>
+        </details>
+        <details>
+          <summary>Quanto tempo leva pra cotação sair?</summary>
+          <p>Normalmente em até 5 minutos, direto pelo WhatsApp, sem precisar preencher formulário longo.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-final">
+        <h2>Sua moto merece uma cobertura que faz sentido no preço</h2>
+        <a class="btn-primary" href="https://wa.me/5511957671467?text=Ol%C3%A1%2C%20quero%20cotar%20um%20seguro%20de%20moto" target="_blank" rel="noopener">
+          <span class="icon">✆</span><span>Falar no WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <span>cotaçãoseguros · correspondente autorizado Suhai Seguradora</span>
+    <span>Atendimento via WhatsApp</span>
+  </div>
+</footer>
+
+</body>
+</html>
