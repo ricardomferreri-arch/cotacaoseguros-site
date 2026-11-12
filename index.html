@@ -17,7 +17,12 @@
 <meta property="og:description" content="A partir de R$82,90/mês. Roubo e furto até 100% Fipe, guincho 24h. Cotação grátis no WhatsApp.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1607130232670-52123ba5be5c?w=1200&h=630&fit=crop&q=75&auto=format">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230f1f10'/%3E%3Ctext x='16' y='24' font-family='Arial' font-weight='700' font-size='20' text-anchor='middle' fill='%23c6f19d'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0f1f10">
 <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
 <link rel="preload" as="image" fetchpriority="high"
   imagesrcset="https://images.unsplash.com/photo-1607130232670-52123ba5be5c?w=640&h=1100&fit=crop&q=60&auto=format 640w, https://images.unsplash.com/photo-1607130232670-52123ba5be5c?w=1000&q=65&auto=format&fit=crop 1000w, https://images.unsplash.com/photo-1607130232670-52123ba5be5c?w=1600&q=65&auto=format&fit=crop 1600w, https://images.unsplash.com/photo-1607130232670-52123ba5be5c?w=2200&q=65&auto=format&fit=crop 2200w"
@@ -501,9 +506,10 @@ p{margin:0}
     </ul>
   </div>
   <div class="legal">
-    <span>CotaçãoSeguros · Seguro moto para entregador, motoboy e uso pessoal em todo o Brasil</span>
-    <span>Fotos: Jack Krzysik, Rowan Freeman, CJ, Habila Mazawaje, Maksym Tymchyk, Nurulloh A.A. via Unsplash</span>
-  </div>
+  <span>CotaçãoSeguros · Seguro moto para entregador, motoboy e uso pessoal · Atendimento online em todo o Brasil</span>
+  <span><a href="mailto:contato@cotacaoseguros.com">contato@cotacaoseguros.com</a> · <a href="/politica-de-privacidade">Política de privacidade</a> · <a href="/termos-de-uso">Termos de uso</a></span>
+  <span>Fotos: Jack Krzysik, Rowan Freeman, CJ, Habila Mazawaje, Maksym Tymchyk, Nurulloh A.A. via Unsplash</span>
+</div>
   <div class="bigname" aria-hidden="true">CotaçãoSeguros</div>
 </footer>
 
@@ -592,6 +598,39 @@ p{margin:0}
     var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }); },{rootMargin:'0px 0px -8% 0px'});
     els.forEach(function(el){io.observe(el);});
   } else { els.forEach(function(el){el.classList.add('in');}); }
+})();
+</script>
+<div id="cs-cookie" hidden role="dialog" aria-label="Aviso de cookies" style="position:fixed;left:12px;right:12px;bottom:88px;z-index:60;max-width:520px;margin:0 auto;background:#162a17;color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:16px;font:15px/1.45 Barlow,system-ui,sans-serif;box-shadow:0 12px 40px rgba(0,0,0,.4)">
+  <p style="margin:0 0 12px">Usamos cookies de medição para entender o que funciona no site. Você escolhe. <a href="/politica-de-privacidade" style="color:#c6f19d">Saiba mais</a></p>
+  <div style="display:flex;gap:8px">
+    <button type="button" data-c="granted" style="flex:1;min-height:44px;border:0;border-radius:999px;background:#c6f19d;color:#0f1f10;font-weight:600;cursor:pointer">Aceitar</button>
+    <button type="button" data-c="denied" style="flex:1;min-height:44px;border:1px solid rgba(255,255,255,.3);border-radius:999px;background:transparent;color:#fff;font-weight:600;cursor:pointer">Recusar</button>
+  </div>
+</div>
+<script>
+(function(){
+  var GA_ID='G-XXXXXXXXXX';
+  if(!/^G-[A-Z0-9]{6,}$/.test(GA_ID)||GA_ID==='G-XXXXXXXXXX')return;
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments)}window.gtag=gtag;
+  gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+  var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);
+  gtag('js',new Date());gtag('config',GA_ID);
+  var saved=null;try{saved=localStorage.getItem('cs_consent')}catch(e){}
+  var box=document.getElementById('cs-cookie');
+  if(saved==='granted')gtag('consent','update',{analytics_storage:'granted'});
+  else if(!saved&&box)box.hidden=false;
+  if(box)box.addEventListener('click',function(e){
+    var v=e.target.getAttribute('data-c');if(!v)return;
+    try{localStorage.setItem('cs_consent',v)}catch(err){}
+    if(v==='granted')gtag('consent','update',{analytics_storage:'granted'});
+    box.hidden=true;
+  });
+  // Cada clique em link do WhatsApp vira o evento "clique_whatsapp", com a posição do botão
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href*="wa.me"]');if(!a)return;
+    gtag('event','clique_whatsapp',{posicao:a.getAttribute('data-wa')||'sem-tag',texto:(a.textContent||'').trim().slice(0,40)});
+  });
 })();
 </script>
 </body>
